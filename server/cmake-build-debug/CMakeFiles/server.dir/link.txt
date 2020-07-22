@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Werror -std=c++14 -pthread -g   CMakeFiles/server.dir/src/app.cpp.o CMakeFiles/server.dir/src/server.cpp.o  -o server 

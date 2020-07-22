@@ -1,0 +1,3 @@
+/home/tal/CLionProjects/chat-app/server/build/CMakeFiles/rebuild_cache.dir
+/home/tal/CLionProjects/chat-app/server/build/CMakeFiles/edit_cache.dir
+/home/tal/CLionProjects/chat-app/server/build/CMakeFiles/server.dir
