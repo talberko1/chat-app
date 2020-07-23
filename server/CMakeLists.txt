@@ -11,6 +11,10 @@ set(libs_dir "${PROJECT_SOURCE_DIR}/libs/")
 file(GLOB source_files "${src_dir}/*.cpp")
 file(GLOB header_files "${src_dir}/*.h")
 
-include_directories(${include_dir})
+add_subdirectory(${libs_dir}/socket-wrapper-1.0.7)
+
+include_directories(${include_dir} ${libs_dir}/socket-wrapper-1.0.7/include/)
 
 add_executable(server ${source_files} ${header_files})
+target_link_libraries(server socket-wrapper)
+add_dependencies(server socket-wrapper)
