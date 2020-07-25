@@ -35,10 +35,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/114/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/121/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/114/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/121/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -54,32 +54,52 @@ CMAKE_BINARY_DIR = /home/tal/CLionProjects/chat-app/server/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/server.dir/all
+all: libs/socket-wrapper-1.0.8/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: libs/socket-wrapper-1.0.8/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/server.dir/clean
+clean: libs/socket-wrapper-1.0.8/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory libs/socket-wrapper-1.0.8
+
+# Recursive "all" directory target.
+libs/socket-wrapper-1.0.8/all: libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/all
+
+.PHONY : libs/socket-wrapper-1.0.8/all
+
+# Recursive "preinstall" directory target.
+libs/socket-wrapper-1.0.8/preinstall:
+
+.PHONY : libs/socket-wrapper-1.0.8/preinstall
+
+# Recursive "clean" directory target.
+libs/socket-wrapper-1.0.8/clean: libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/clean
+
+.PHONY : libs/socket-wrapper-1.0.8/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/server.dir
 
 # All Build rule for target.
-CMakeFiles/server.dir/all:
+CMakeFiles/server.dir/all: libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/all
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
@@ -93,6 +113,33 @@ server: CMakeFiles/server.dir/rule
 CMakeFiles/server.dir/clean:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
 .PHONY : CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir
+
+# All Build rule for target.
+libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/all:
+	$(MAKE) -f libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build.make libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/depend
+	$(MAKE) -f libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build.make libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target socket-wrapper"
+.PHONY : libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/all
+
+# Build rule for subdir invocation for target.
+libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles 0
+.PHONY : libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/rule
+
+# Convenience name for target.
+socket-wrapper: libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/rule
+
+.PHONY : socket-wrapper
+
+# clean rule for target.
+libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/clean:
+	$(MAKE) -f libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build.make libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/clean
+.PHONY : libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

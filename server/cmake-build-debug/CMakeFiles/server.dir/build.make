@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/114/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/121/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/114/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/121/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,9 +57,48 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
+CMakeFiles/server.dir/src/Server.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/Server.cpp.o: ../src/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/Server.cpp.o -c /home/tal/CLionProjects/chat-app/server/src/Server.cpp
+
+CMakeFiles/server.dir/src/Server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/Server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tal/CLionProjects/chat-app/server/src/Server.cpp > CMakeFiles/server.dir/src/Server.cpp.i
+
+CMakeFiles/server.dir/src/Server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/Server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tal/CLionProjects/chat-app/server/src/Server.cpp -o CMakeFiles/server.dir/src/Server.cpp.s
+
+CMakeFiles/server.dir/src/TCPServer.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/TCPServer.cpp.o: ../src/TCPServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/TCPServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/TCPServer.cpp.o -c /home/tal/CLionProjects/chat-app/server/src/TCPServer.cpp
+
+CMakeFiles/server.dir/src/TCPServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/TCPServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tal/CLionProjects/chat-app/server/src/TCPServer.cpp > CMakeFiles/server.dir/src/TCPServer.cpp.i
+
+CMakeFiles/server.dir/src/TCPServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/TCPServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tal/CLionProjects/chat-app/server/src/TCPServer.cpp -o CMakeFiles/server.dir/src/TCPServer.cpp.s
+
+CMakeFiles/server.dir/src/UDPServer.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/UDPServer.cpp.o: ../src/UDPServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/UDPServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/UDPServer.cpp.o -c /home/tal/CLionProjects/chat-app/server/src/UDPServer.cpp
+
+CMakeFiles/server.dir/src/UDPServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/UDPServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tal/CLionProjects/chat-app/server/src/UDPServer.cpp > CMakeFiles/server.dir/src/UDPServer.cpp.i
+
+CMakeFiles/server.dir/src/UDPServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/UDPServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tal/CLionProjects/chat-app/server/src/UDPServer.cpp -o CMakeFiles/server.dir/src/UDPServer.cpp.s
+
 CMakeFiles/server.dir/src/app.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/app.cpp.o: ../src/app.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/app.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/app.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/app.cpp.o -c /home/tal/CLionProjects/chat-app/server/src/app.cpp
 
 CMakeFiles/server.dir/src/app.cpp.i: cmake_force
@@ -70,32 +109,24 @@ CMakeFiles/server.dir/src/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/app.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tal/CLionProjects/chat-app/server/src/app.cpp -o CMakeFiles/server.dir/src/app.cpp.s
 
-CMakeFiles/server.dir/src/server.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/server.cpp.o: ../src/server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/server.cpp.o -c /home/tal/CLionProjects/chat-app/server/src/server.cpp
-
-CMakeFiles/server.dir/src/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tal/CLionProjects/chat-app/server/src/server.cpp > CMakeFiles/server.dir/src/server.cpp.i
-
-CMakeFiles/server.dir/src/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tal/CLionProjects/chat-app/server/src/server.cpp -o CMakeFiles/server.dir/src/server.cpp.s
-
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/src/app.cpp.o" \
-"CMakeFiles/server.dir/src/server.cpp.o"
+"CMakeFiles/server.dir/src/Server.cpp.o" \
+"CMakeFiles/server.dir/src/TCPServer.cpp.o" \
+"CMakeFiles/server.dir/src/UDPServer.cpp.o" \
+"CMakeFiles/server.dir/src/app.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
+server: CMakeFiles/server.dir/src/Server.cpp.o
+server: CMakeFiles/server.dir/src/TCPServer.cpp.o
+server: CMakeFiles/server.dir/src/UDPServer.cpp.o
 server: CMakeFiles/server.dir/src/app.cpp.o
-server: CMakeFiles/server.dir/src/server.cpp.o
 server: CMakeFiles/server.dir/build.make
+server: libs/socket-wrapper-1.0.8/libsocket-wrapper.so
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tal/CLionProjects/chat-app/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

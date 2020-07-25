@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Werror -std=c++14 -pthread -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tal/CLionProjects/chat-app/server/include 
+CXX_INCLUDES = -I/home/tal/CLionProjects/chat-app/server/include -I/home/tal/CLionProjects/chat-app/server/libs/socket-wrapper-1.0.8/include 
 

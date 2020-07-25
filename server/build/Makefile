@@ -123,6 +123,100 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+#=============================================================================
+# Target rules for targets named socket-wrapper
+
+# Build rule for target.
+socket-wrapper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 socket-wrapper
+.PHONY : socket-wrapper
+
+# fast build rule for target.
+socket-wrapper/fast:
+	$(MAKE) -f libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build.make libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build
+.PHONY : socket-wrapper/fast
+
+src/Server.o: src/Server.cpp.o
+
+.PHONY : src/Server.o
+
+# target to build an object file
+src/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.o
+.PHONY : src/Server.cpp.o
+
+src/Server.i: src/Server.cpp.i
+
+.PHONY : src/Server.i
+
+# target to preprocess a source file
+src/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.i
+.PHONY : src/Server.cpp.i
+
+src/Server.s: src/Server.cpp.s
+
+.PHONY : src/Server.s
+
+# target to generate assembly for a file
+src/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.s
+.PHONY : src/Server.cpp.s
+
+src/TCPServer.o: src/TCPServer.cpp.o
+
+.PHONY : src/TCPServer.o
+
+# target to build an object file
+src/TCPServer.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/TCPServer.cpp.o
+.PHONY : src/TCPServer.cpp.o
+
+src/TCPServer.i: src/TCPServer.cpp.i
+
+.PHONY : src/TCPServer.i
+
+# target to preprocess a source file
+src/TCPServer.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/TCPServer.cpp.i
+.PHONY : src/TCPServer.cpp.i
+
+src/TCPServer.s: src/TCPServer.cpp.s
+
+.PHONY : src/TCPServer.s
+
+# target to generate assembly for a file
+src/TCPServer.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/TCPServer.cpp.s
+.PHONY : src/TCPServer.cpp.s
+
+src/UDPServer.o: src/UDPServer.cpp.o
+
+.PHONY : src/UDPServer.o
+
+# target to build an object file
+src/UDPServer.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/UDPServer.cpp.o
+.PHONY : src/UDPServer.cpp.o
+
+src/UDPServer.i: src/UDPServer.cpp.i
+
+.PHONY : src/UDPServer.i
+
+# target to preprocess a source file
+src/UDPServer.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/UDPServer.cpp.i
+.PHONY : src/UDPServer.cpp.i
+
+src/UDPServer.s: src/UDPServer.cpp.s
+
+.PHONY : src/UDPServer.s
+
+# target to generate assembly for a file
+src/UDPServer.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/UDPServer.cpp.s
+.PHONY : src/UDPServer.cpp.s
+
 src/app.o: src/app.cpp.o
 
 .PHONY : src/app.o
@@ -159,6 +253,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
+	@echo "... socket-wrapper"
+	@echo "... src/Server.o"
+	@echo "... src/Server.i"
+	@echo "... src/Server.s"
+	@echo "... src/TCPServer.o"
+	@echo "... src/TCPServer.i"
+	@echo "... src/TCPServer.s"
+	@echo "... src/UDPServer.o"
+	@echo "... src/UDPServer.i"
+	@echo "... src/UDPServer.s"
 	@echo "... src/app.o"
 	@echo "... src/app.i"
 	@echo "... src/app.s"

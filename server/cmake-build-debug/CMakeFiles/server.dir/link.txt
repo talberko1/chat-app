@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -Werror -std=c++14 -pthread -g   CMakeFiles/server.dir/src/app.cpp.o CMakeFiles/server.dir/src/server.cpp.o  -o server 
+/usr/bin/c++   -Wall -Werror -std=c++14 -pthread -g   CMakeFiles/server.dir/src/Server.cpp.o CMakeFiles/server.dir/src/TCPServer.cpp.o CMakeFiles/server.dir/src/UDPServer.cpp.o CMakeFiles/server.dir/src/app.cpp.o  -o server  -Wl,-rpath,/home/tal/CLionProjects/chat-app/server/cmake-build-debug/libs/socket-wrapper-1.0.8 libs/socket-wrapper-1.0.8/libsocket-wrapper.so 
