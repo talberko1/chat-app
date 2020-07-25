@@ -5,7 +5,7 @@
 		<Option title="client"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\socket-wrapper-1.0.8\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/tal/CLionProjects/chat-app/client/cmake-build-debug"/>
@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/tal/CLionProjects/chat-app/client/include"/>
+					<Add directory="/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -68,6 +69,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/tal/CLionProjects/chat-app/client/include"/>
+					<Add directory="/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -83,12 +85,73 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="socket-wrapper">
+				<Option output="/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/libsocket-wrapper.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 socket-wrapper"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="socket-wrapper/fast">
+				<Option output="/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/libsocket-wrapper.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 socket-wrapper/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/tal/CLionProjects/chat-app/client/cmake-build-debug/libs/socket-wrapper-1.0.8/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/src/Socket.cpp">
+			<Option target="socket-wrapper"/>
+		</Unit>
+		<Unit filename="/home/tal/CLionProjects/chat-app/client/src/Client.cpp">
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/home/tal/CLionProjects/chat-app/client/src/TCPClient.cpp">
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/home/tal/CLionProjects/chat-app/client/src/UDPClient.cpp">
+			<Option target="client"/>
+		</Unit>
 		<Unit filename="/home/tal/CLionProjects/chat-app/client/src/app.cpp">
 			<Option target="client"/>
 		</Unit>
 		<Unit filename="/home/tal/CLionProjects/chat-app/client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\socket-wrapper-1.0.8\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

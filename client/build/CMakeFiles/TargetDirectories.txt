@@ -1,3 +1,6 @@
 /home/tal/CLionProjects/chat-app/client/build/CMakeFiles/rebuild_cache.dir
 /home/tal/CLionProjects/chat-app/client/build/CMakeFiles/edit_cache.dir
 /home/tal/CLionProjects/chat-app/client/build/CMakeFiles/client.dir
+/home/tal/CLionProjects/chat-app/client/build/libs/socket-wrapper-1.0.8/CMakeFiles/rebuild_cache.dir
+/home/tal/CLionProjects/chat-app/client/build/libs/socket-wrapper-1.0.8/CMakeFiles/edit_cache.dir
+/home/tal/CLionProjects/chat-app/client/build/libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir

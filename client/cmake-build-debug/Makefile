@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/114/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/121/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/114/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/121/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/tal/CLionProjects/chat-app/client/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/114/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/121/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/114/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/121/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,100 @@ client/fast:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+#=============================================================================
+# Target rules for targets named socket-wrapper
+
+# Build rule for target.
+socket-wrapper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 socket-wrapper
+.PHONY : socket-wrapper
+
+# fast build rule for target.
+socket-wrapper/fast:
+	$(MAKE) -f libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build.make libs/socket-wrapper-1.0.8/CMakeFiles/socket-wrapper.dir/build
+.PHONY : socket-wrapper/fast
+
+src/Client.o: src/Client.cpp.o
+
+.PHONY : src/Client.o
+
+# target to build an object file
+src/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Client.cpp.o
+.PHONY : src/Client.cpp.o
+
+src/Client.i: src/Client.cpp.i
+
+.PHONY : src/Client.i
+
+# target to preprocess a source file
+src/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Client.cpp.i
+.PHONY : src/Client.cpp.i
+
+src/Client.s: src/Client.cpp.s
+
+.PHONY : src/Client.s
+
+# target to generate assembly for a file
+src/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Client.cpp.s
+.PHONY : src/Client.cpp.s
+
+src/TCPClient.o: src/TCPClient.cpp.o
+
+.PHONY : src/TCPClient.o
+
+# target to build an object file
+src/TCPClient.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/TCPClient.cpp.o
+.PHONY : src/TCPClient.cpp.o
+
+src/TCPClient.i: src/TCPClient.cpp.i
+
+.PHONY : src/TCPClient.i
+
+# target to preprocess a source file
+src/TCPClient.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/TCPClient.cpp.i
+.PHONY : src/TCPClient.cpp.i
+
+src/TCPClient.s: src/TCPClient.cpp.s
+
+.PHONY : src/TCPClient.s
+
+# target to generate assembly for a file
+src/TCPClient.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/TCPClient.cpp.s
+.PHONY : src/TCPClient.cpp.s
+
+src/UDPClient.o: src/UDPClient.cpp.o
+
+.PHONY : src/UDPClient.o
+
+# target to build an object file
+src/UDPClient.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/UDPClient.cpp.o
+.PHONY : src/UDPClient.cpp.o
+
+src/UDPClient.i: src/UDPClient.cpp.i
+
+.PHONY : src/UDPClient.i
+
+# target to preprocess a source file
+src/UDPClient.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/UDPClient.cpp.i
+.PHONY : src/UDPClient.cpp.i
+
+src/UDPClient.s: src/UDPClient.cpp.s
+
+.PHONY : src/UDPClient.s
+
+# target to generate assembly for a file
+src/UDPClient.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/UDPClient.cpp.s
+.PHONY : src/UDPClient.cpp.s
+
 src/app.o: src/app.cpp.o
 
 .PHONY : src/app.o
@@ -159,6 +253,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... client"
+	@echo "... socket-wrapper"
+	@echo "... src/Client.o"
+	@echo "... src/Client.i"
+	@echo "... src/Client.s"
+	@echo "... src/TCPClient.o"
+	@echo "... src/TCPClient.i"
+	@echo "... src/TCPClient.s"
+	@echo "... src/UDPClient.o"
+	@echo "... src/UDPClient.i"
+	@echo "... src/UDPClient.s"
 	@echo "... src/app.o"
 	@echo "... src/app.i"
 	@echo "... src/app.s"

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/socket-wrapper-1.0.8/include/socketwrapper/Socket.h
+iostream
+-
+cstring
+-
+tuple
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+socketwrapper/SocketException.h
+../libs/socket-wrapper-1.0.8/include/socketwrapper/socketwrapper/SocketException.h
+
+../libs/socket-wrapper-1.0.8/include/socketwrapper/SocketException.h
+exception
+-
+
+/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/src/Socket.cpp
+socketwrapper/Socket.h
+/home/tal/CLionProjects/chat-app/client/libs/socket-wrapper-1.0.8/src/socketwrapper/Socket.h
+
