@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/socketwrapper/Socket.h
+iostream
+-
+cstring
+-
+tuple
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+socketwrapper/SocketException.h
+../include/socketwrapper/socketwrapper/SocketException.h
+
+../include/socketwrapper/SocketException.h
+exception
+-
+
+/home/tal/Desktop/dev/socket-wrapper/src/Socket.cpp
+socketwrapper/Socket.h
+/home/tal/Desktop/dev/socket-wrapper/src/socketwrapper/Socket.h
+
