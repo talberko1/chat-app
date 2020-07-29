@@ -10,6 +10,16 @@
 #include <list>
 #include <pthread.h>
 
+struct TCPServerData {
+    std::list<Socket> targets;
+    Socket serverSocket;
+};
+
+struct TCPClientData {
+    TCPServerData* serverData;
+    Socket clientSocket;
+};
+
 class TCPServer : public Server {
 public:
     TCPServer(const char *ip, int port);
@@ -19,8 +29,6 @@ public:
     size_t send(void *target, char *buffer, size_t length, int flags) override;
 
     size_t receive(void *target, char *buffer, size_t length, int flags) override;
-
-    static void removeClient(struct ServerData *serverData, void *client);
 };
 
 #endif //SERVER_TCPSERVER_H
