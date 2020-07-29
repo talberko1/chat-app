@@ -8,15 +8,7 @@
 #include "socketwrapper/Socket.h"
 #include <list>
 
-struct ServerData {
-    Socket server;
-    std::list<void*> targets;
-};
-
-struct ClientData {
-    struct ServerData* data;
-    void* client;
-};
+constexpr auto EXIT_MESSAGE = "@exit";
 
 class Server {
 protected:
